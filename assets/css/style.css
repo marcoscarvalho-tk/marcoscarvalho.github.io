@@ -236,31 +236,19 @@ i{
 }   
 
 
-.fullheight-fst {
-	/*com isso o header ficará sempre com o tamanho da tela */
+.fullheight-fst {	
 	height: 100vh;
-	/*background geralmente uso o modo compacto, mas aqui vou colocar separadamente para explicar cada parte*/
-	/* aqui defino a imagem maior*/
 	background-image: url("../images/homebkg_1500x1000.jpg");
-	
-	/*deixa o background com efeito paralax*/
 	background-attachment: fixed;
-	/* cover é para nunca deixar espaço sem imagem*/
 	background-size: cover;
 }
 
 .fullheight-scd {
-	/*com isso o header ficará sempre com o tamanho da tela */
 	height: 100vh;
-	/*background geralmente uso o modo compacto, mas aqui vou colocar separadamente para explicar cada parte*/
-	/* aqui defino a imagem maior*/
 	background-image: url("../images/bkgcontact_1500x1000.jpg");
-	/*deixa o background com efeito paralax*/
 	background-attachment: fixed;
-	/* cover é para nunca deixar espaço sem imagem*/
 	background-size: cover;
 }
-/* aqui troco a imagem pra cada resolução na ordem do maior pro menor */
 @media screen and (max-width: 1500px) {
 	.fst-header .fullheight-fst {
 		background-image: url("../images/homebkg_1500x1000.jpg");
@@ -279,21 +267,21 @@ i{
 }
 @media screen and (max-width: 800px) {
 	.header.fullheight {
-		background-image: url("image/cerca-800.jpg");
+		background-image: url("800.jpg");
 	}
 }
 @media screen and (max-width: 600px) {
 	.header.fullheight {
-		background-image: url("image/cerca-600.jpg");
+		background-image: url("600.jpg");
 	}
 }
 @media screen and (max-width: 400px) {
 	.header.fullheight {
-		background-image: url("image/cerca-400.jpg");
+		background-image: url("400.jpg");
 	}
 }
 @media screen and (max-width: 320px) {
 	.fullheight {
-		background-image: url("image/cerca-320.jpg");
+		background-image: url("320.jpg");
 	}
 }
