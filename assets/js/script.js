@@ -39,5 +39,32 @@ function submitForm(){
   }
   ajax.send(formdata);
 }
-
+/*Função ajax para envio de msg via email*/ 
+$(function(){
+  $('form').on('submit', function(e){
+      e.preventDefault();
+      dados = $(this).serialize();           
+          $('#info1').html('<p><i style="font-size:15px" class="fas fa-sync fa-spin text-center"></i> Enviando...</p>')
+          .css('color', 'white');
+          $('#bt').attr('disabled', 'disabled');
+      setTimeout(function(){
+          $.ajax({
+              type: "POST",
+              url:  "mail.php",
+              data: dados,
+              success:function(resp){
+                  $('#info1').addClass('alert alert-secondary text-center m-2 w-100')
+                  .css('color', 'green')
+                  .html(resp);
+                  $('.field').val('');
+                  $('#bt').removeAttr('disabled');
+              },
+              error:function(error){
+                  alert("Erro "+error['status']);
+                  $('#bt').removeAttr('disabled');
+              }
+          }); 
+      }, 3000);
+  });
+});
   
