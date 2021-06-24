@@ -21,24 +21,7 @@
   }
 }
 
-function _(id){return document.getElementById(id);}
-function submitForm(){
-  _("mybtn").disabled = true;
-  _("status").innerHTML = 'Enviando...';
-  var formdata = new FormData();
-  formdata.append("n", _("n").value);
-  formdata.append("e", _("e").value);
-  formdata.append("m", _("m").value);
-  var ajax = new XMLHttpRequest();
-  ajax.open("POST", "mail.php");
-  ajax.onreadystatechange = function(){
-    if(ajax.readyState == 4 && ajax.status == 200) {
-      _("status").innerHTML = ajax.responseText;
-      _("mybtn").disabled = false;
-    }
-  }
-  ajax.send(formdata);
-}
+
 /*Função ajax para envio de msg via email*/ 
 $(function(){
   $('form').on('submit', function(e){
