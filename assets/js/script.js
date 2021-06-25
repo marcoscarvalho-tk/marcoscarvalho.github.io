@@ -22,32 +22,22 @@
 }
 
 
-/*Função ajax para envio de msg via email*/ 
-$(function(){
-  $('form').on('submit', function(e){
-      e.preventDefault();
-      dados = $(this).serialize();           
-          $('#info1').html('<p><i style="font-size:15px" class="fas fa-sync fa-spin text-center"></i> Enviando...</p>')
-          .css('color', 'white');
-          $('#bt').attr('disabled', 'disabled');
-      setTimeout(function(){
-          $.ajax({
-              type: "POST",
-              url:  "mail.php",
-              data: dados,
-              success:function(resp){
-                  $('#info1').addClass('alert alert-secondary text-center m-2 w-100')
-                  .css('color', 'green')
-                  .html(resp);
-                  $('.field').val('');
-                  $('#bt').removeAttr('disabled');
-              },
-              error:function(error){
-                  alert("Erro "+error['status']);
-                  $('#bt').removeAttr('disabled');
-              }
-          }); 
-      }, 3000);
+(function() {
+  // https://dashboard.emailjs.com/admin/integration
+  emailjs.init('user_8PkzsjkZdm8Uz4n5dJPlZ');
+})();
+
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // generate a five digit number for the contact_number variable
+      this.contact_number.value = Math.random() * 100000 | 0;
+      // these IDs from the previous steps
+      emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function() {
+              console.log('SUCCESS!');
+          }, function(error) {
+              console.log('FAILED...', error);
+          });
   });
-});
-  
+}

@@ -57,21 +57,17 @@
 		</div>
 		<div class="row header scd-header fullheight-scd pt-5 my-5" id="contact">
 			<div class="form form-group py-5 pr-4 m-auto text-center">
-				<form id="my_form" method="POST">
+				<form id="my_form contact-form">
 					<h2 class="m-0"><strong>CONTATO</strong><br/><i class="fas fa-envelope fa-2x"></i></h2>
+					<input type="hidden" name="contact_number">
 					<label for="name">Nome</label>		
-					<input id="name"  type="text" name="name" class="form-control m-2" required="">
+					<input id="name"  type="text" name="user_name" class="form-control m-2" required="">
 					<label for="email">Email</label>
-					<input id="email"  type="email" name="email" class="form-control m-2" required="">
+					<input id="email"  type="email" name="user_email" class="form-control m-2" required="">
 					<label for="msg">Mensagem</label>
-					<textarea  id="msg" name="msg" rows="3" class="form-control m-2" required="" style="resize: none;"></textarea>
-					<input id="bt" type="submit" name="submit" class="gradient-buttons btn btn-dark m-2">
-					<p id="status"></p>		
+					<textarea  id="msg" name="message" rows="3" class="form-control m-2" required="" style="resize: none;"></textarea>
+					<input id="bt" type="submit" value="Eviar" class="gradient-buttons btn btn-dark m-2">							
 				</form>
-					<br/><br/>
-					<div id="info1"></div>
-					<br/><br/>
-					<div id="info2"></div>
 			</div>
 		</div>
 		<div class="row area py-5 my-5">
