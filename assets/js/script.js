@@ -22,22 +22,27 @@
 }
 
 
-(function() {
-  // https://dashboard.emailjs.com/admin/integration
-  emailjs.init('user_8PkzsjkZdm8Uz4n5dJPlZ');
-})();
 
-window.onload = function() {
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      // generate a five digit number for the contact_number variable
-      this.contact_number.value = Math.random() * 100000 | 0;
-      // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this)
-          .then(function() {
-              console.log('SUCCESS!');
-          }, function(error) {
-              console.log('FAILED...', error);
-          });
+//Função jquery para envio de msg
+$(function(){
+  $('#contact-form').on('submit', function(e){
+      e.preventDefault();         
+          $('#info1').addClass('alert alert-secondary text-center m-2 w-100 size-16')
+          .html('<p class="size-16 text-center"><i class="fas fa-sync fa-spin size-16"></i> Enviando...</p>')
+          $('#bt').attr('disabled', 'disabled');
+      setTimeout(function(){
+        emailjs.sendForm('default_service', 'contact_form', '#contact-form')
+            .then(function() {
+              $('#info1').css('color', 'green')
+              .html('<p class="size-16 text-center">Mensagem enviada com sucesso!</p>');
+              $('.field').val('');
+              $('#bt').removeAttr('disabled');
+            }, function(error) {
+              $('#info1').css('color', 'red')
+              .html('<p class="size-16 text-center">Ops! Erro: '+error['status']+'. Não foi possível enviar sua mensagem.</p>');
+              $('.field').val('');
+              $('#bt').removeAttr('disabled');
+            });
+      }, 3000);
   });
-}
+});
