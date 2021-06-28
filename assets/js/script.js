@@ -21,13 +21,13 @@
   }
 }
 
-
-
-//Função jquery para envio de msg
+(function() {
+  emailjs.init('user_8PkzsjkZdm8Uz4n5dJPlZ');
+  })();
 $(function(){
   $('#contact-form').on('submit', function(e){
       e.preventDefault();         
-          $('#info1').addClass('alert alert-secondary text-center m-2 w-100 size-16')
+          $('#info1').css('color', 'black').addClass('alert alert-secondary text-center m-2 w-100 size-16')
           .html('<p class="size-16 text-center"><i class="fas fa-sync fa-spin size-16"></i> Enviando...</p>')
           $('#bt').attr('disabled', 'disabled');
       setTimeout(function(){
@@ -39,7 +39,7 @@ $(function(){
               $('#bt').removeAttr('disabled');
             }, function(error) {
               $('#info1').css('color', 'red')
-              .html('<p class="size-16 text-center">Ops! Erro: '+error['status']+'. Não foi possível enviar sua mensagem.</p>');
+              .html('<p class="size-16 text-center">Erro: '+error['status']+'. Não foi possível enviar sua mensagem.</p>');
               $('.field').val('');
               $('#bt').removeAttr('disabled');
             });
