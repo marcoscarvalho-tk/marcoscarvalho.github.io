@@ -22,7 +22,7 @@
 }
 
 (function() {
-  emailjs.init('user_8PkzsjkZdm8Uz4n5dJPlZ');
+  emailjs.init('');
   })();
 $(function(){
   $('#contact-form').on('submit', function(e){
