@@ -3,6 +3,10 @@
 	font-family: 'poppins';
 	src: url('../fonts/Poppins/Poppins-Regular.ttf');
 	}
+@font-face {
+	font-family: 'Roboto_Mono';
+	src: url('../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
+	}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -151,7 +155,10 @@ i{
   	margin-right: auto;
   }
 }
-
+#typed{
+	font-family: Roboto_Mono;
+	font-weight: lighter;
+}
 
 .header{
 	color: white;	
