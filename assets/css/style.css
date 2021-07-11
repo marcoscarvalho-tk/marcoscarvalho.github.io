@@ -256,6 +256,7 @@ i{
 	background-image: url("../images/homebkg_1500x1000.jpg");
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 }
 
 .fullheight-scd {
@@ -263,6 +264,7 @@ i{
 	background-image: url("../images/bkgcontact_1500x1000.jpg");
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 }
 @media screen and (max-width: 1500px) {
 	.fst-header .fullheight-fst {
