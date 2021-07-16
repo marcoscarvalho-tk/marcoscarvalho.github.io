@@ -46,3 +46,15 @@ $(function(){
       }, 3000);
   });
 });
+
+function typeFunction(){
+  var typed5 = new Typed('#typed', {
+    strings: ['&#60;Desenvolver/&#62;',
+              '&#60;Desenvolver-se/&#62;'],
+    typeSpeed: 80,
+    backSpeed: 60,
+    shuffle: true,
+    smartBackspace: false,
+    loop: true
+    });
+}
