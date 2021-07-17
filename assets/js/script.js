@@ -1,5 +1,17 @@
 
-	window.onscroll = function() {scrollFunction()};
+	document.addEventListener('DOMContentLoaded', function() {   
+    var typed5 = new Typed('#typed', {
+      strings: ['&#60;Desenvolver/&#62;',
+                '&#60;Desenvolver-se/&#62;'],
+      typeSpeed: 80,
+      backSpeed: 60,
+      shuffle: true,
+      smartBackspace: false,
+      loop: true
+      });
+  }, false);
+  
+  window.onscroll = function() {scrollFunction()};
 	function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "10px 10px";
@@ -46,15 +58,3 @@ $(function(){
       }, 3000);
   });
 });
-
-function typeFunction(){
-  var typed5 = new Typed('#typed', {
-    strings: ['&#60;Desenvolver/&#62;',
-              '&#60;Desenvolver-se/&#62;'],
-    typeSpeed: 80,
-    backSpeed: 60,
-    shuffle: true,
-    smartBackspace: false,
-    loop: true
-    });
-}
