@@ -97,8 +97,7 @@ i{
 
 #navbar {
   overflow: hidden;
-  background-color: #ffffff;
-  background-image: url("../images/grid.png");
+  background-image: linear-gradient(#ffffff,#ffffff00);
   padding: 20px 10px;
   transition: 0.4s;
   position: fixed;
@@ -159,18 +158,23 @@ i{
   	margin-right: auto;
   }
 }
-.header h1 {
-	font-family: Glass_TTY;
-	color: #00ff00;
-	text-shadow: #00ff00 3px 3px 15px;
+.header {
 	background-color: #00fd002a;
 	background-image: url("../images/grid.png");
 	box-shadow: #00ff00 0px 0px 5px;
 	border-radius: 5px;
 	padding: 30px;	
-	left: 0;
 	width: 80%;
 	height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.typed {
+	font-family: Glass_TTY;
+	color: #00ff00;
+	text-shadow: #00ff00 3px 3px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,8 +220,8 @@ i{
 	text-decoration: none;
 	color: #AFF;
 }
-.fab{
-    font-size: 10vh;
+.form{
+	color: white;
 }
 .neumorphism{
     display: flex;

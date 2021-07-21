@@ -7,7 +7,7 @@
       backSpeed: 120,
       shuffle: false,
       smartBackspace: false,
-      loop: true
+      loop: false
       }); 
   }, false);
   
@@ -15,7 +15,7 @@
 	function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "10px 10px";
-    document.getElementById("navbar").style.backgroundColor = "#ffffff80";
+    document.getElementById("navbar").style.backgroundImage = "linear-gradient(#ffffff,#ffffff00)";
     document.getElementById("logo").style.backgroundSize = "156px 50px";
     document.getElementById("logo").style.width = "156px";
     document.getElementById("logo").style.height = "50px";
@@ -26,7 +26,7 @@
   } else {
 
     document.getElementById("navbar").style.padding = "25px 10px";
-    document.getElementById("navbar").style.backgroundColor = "#ffffff";
+    document.getElementById("navbar").style.backgroundImage = "linear-gradient(#ffffff,#ffffff00)";
     document.getElementById("logo").style.backgroundSize = "250px 80px";
     document.getElementById("logo").style.width = "250px";
     document.getElementById("logo").style.height = "80px";
