@@ -1,24 +1,39 @@
-
-	document.addEventListener('DOMContentLoaded', function() {   
-    var typed5 = new Typed('#typed', {
-      strings: ['Desenvolver',
-                'Desenvolver-se'],
-      typeSpeed: 150,
-      backSpeed: 120,
-      shuffle: false,
-      smartBackspace: false,
-      loop: false
-      }); 
+document.addEventListener('DOMContentLoaded', function() {   
+  var typed5 = new Typed('#typed', {
+    strings: ['Hello World',
+              'Wellcome'],
+    typeSpeed: 150,
+    backSpeed: 120,
+    shuffle: false,
+    smartBackspace: false,
+    loop: false
+    }); 
+}, false);
+  document.addEventListener('DOMContentLoaded', function() { 
+    if(document.getElementById("navbar").offsetWidth < 700
+    || document.getElementById("home").offsetHeight < 600
+      ){
+      document.getElementById("navbar").style.padding = "0px";
+      document.getElementById("navbar").style.backgroundImage = "linear-gradient(#ffffff,#ffffff00)";
+      document.getElementById("logo").style.backgroundSize = "156px 50px";
+      document.getElementById("logo").style.width = "156px";
+      document.getElementById("logo").style.height = "70px";
+      document.getElementById("navbar-right").style.padding = "10px";
+      document.getElementById("logo").style.marginLeft = "auto";
+      document.getElementById("logo").style.marginRight = "auto";
+      }
   }, false);
   
   window.onscroll = function() {scrollFunction()};
 	function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "10px 10px";
+  if ( document.getElementById("navbar").offsetWidth < 700
+  || document.getElementById("home").offsetHeight < 600 
+  || document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0px";
     document.getElementById("navbar").style.backgroundImage = "linear-gradient(#ffffff,#ffffff00)";
     document.getElementById("logo").style.backgroundSize = "156px 50px";
     document.getElementById("logo").style.width = "156px";
-    document.getElementById("logo").style.height = "50px";
+    document.getElementById("logo").style.height = "70px";
     document.getElementById("navbar-right").style.padding = "10px";
     document.getElementById("logo").style.marginLeft = "auto";
     document.getElementById("logo").style.marginRight = "auto";

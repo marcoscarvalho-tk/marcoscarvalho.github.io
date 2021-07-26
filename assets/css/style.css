@@ -140,9 +140,6 @@ i{
 }
 
 @media screen and (max-width: 580px) {
-  #navbar {
-    padding: 10px 40px !important;
-  }
   #navbar a {
     float: none;
     display: block;
@@ -150,8 +147,9 @@ i{
   }
   #navbar-right {
   	position: relative;
-    float: left;
     display: inline-flex;
+	width: 100%;
+	justify-content: center;
   }
   #logo{
   	margin-left: auto;
@@ -159,9 +157,6 @@ i{
   }
 }
 .header {
-	background-color: #00fd002a;
-	background-image: url("../images/grid.png");
-	box-shadow: #00ff00 0px 0px 5px;
 	border-radius: 5px;
 	padding: 30px;	
 	width: 80%;
@@ -172,18 +167,22 @@ i{
 
 }
 .typed {
-	font-family: Glass_TTY;
-	color: #00ff00;
-	text-shadow: #00ff00 3px 3px 15px;
+	position: fixed;
+	font-family: Roboto_Mono;
+	font-size: 2vw;
+	color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .area {
 	background-image: url("../images/grid.png");
+	background-color: #ffffff;
 	max-width: 1160px;
 	padding: 20px 30px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 2;
 }
 .gradient-buttons {
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0.5),
@@ -247,57 +246,47 @@ i{
     width: 250px;
     border-radius: 20px;
     box-shadow: -15px -15px 25px #ffffff73, 15px 15px 20px rgba(94, 104, 121, .288);
-}   
-
-
-.fullheight-fst {	
+} 
+.fullheight-fst {
 	height: 100vh;
-	background-image: url("../images/homebkg_1500x1000.jpg");
+	background-image: url("../images/myhome.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-}
-
+}   
 .fullheight-scd {
 	height: 100vh;
 	background-image: url("../images/bkgcontact_1500x1000.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+	position: relative;
+	z-index: 1;
 }
+
 @media screen and (max-width: 1500px) {
 	.fst-header .fullheight-fst {
-		background-image: url("../images/homebkg_1500x1000.jpg");
+		background-image: url("../images/myhome.jpg");
 	}
 	.scd-header .fullheight-scd {
-		background-image: url("images/bkgcontact_1500x1000.jpg");
+		background-image: url("../images/bkgcontact_1500x1000.jpg");
 	}
 }
 @media screen and (max-width: 1000px) {
 	.fst-header .fullheight-fst {
-		background-image: url("../images/homebkg_1500x1000.jpg");
+		background-image: url("../images/myhome.jpg");
 	}
 	.scd-header .fullheight-scd {
 		background-image: url("../images/bkgcontact_1500x1000.jpg");
 	}
 }
 @media screen and (max-width: 800px) {
-	.header.fullheight {
-		background-image: url("800.jpg");
+	.fst-header.fullheight-fst {
+		background-image: url("../images/myhome_800x533.jpg");
 	}
 }
 @media screen and (max-width: 600px) {
-	.header.fullheight {
-		background-image: url("600.jpg");
-	}
-}
-@media screen and (max-width: 400px) {
-	.header.fullheight {
-		background-image: url("400.jpg");
-	}
-}
-@media screen and (max-width: 320px) {
-	.fullheight {
-		background-image: url("320.jpg");
+	.fst-header.fullheight-fst {
+		background-image: url("../images/myhome_600x1000.jpg");
 	}
 }
