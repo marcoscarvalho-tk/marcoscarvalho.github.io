@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {   
   var typed5 = new Typed('#typed', {
     strings: ['Hello World',
-              'Wellcome'],
+              'Wellcome!'],
     typeSpeed: 150,
     backSpeed: 120,
     shuffle: false,

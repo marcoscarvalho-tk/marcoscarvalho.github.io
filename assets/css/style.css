@@ -156,24 +156,13 @@ i{
   	margin-right: auto;
   }
 }
-.header {
-	border-radius: 5px;
-	padding: 30px;	
-	width: 80%;
-	height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 .typed {
 	position: fixed;
 	font-family: Roboto_Mono;
 	font-size: 2vw;
 	color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	top: 45%;
+	left: 35%;
 }
 .area {
 	background-image: url("../images/grid.png");
