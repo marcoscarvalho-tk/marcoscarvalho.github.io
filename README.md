@@ -2,10 +2,10 @@
 
 **Web site de portifólio.**  
 
-[![](./assets/images/homepage1.png)](https://marcoscarvalho-tk.github.io/marcoscarvalho.github.io/)  
+[![](./assets/images/homepage1.png)](https://oaksmark.github.io/marcoscarvalho.github.io/)  
 
 Apresenta conteúdo pessoal e profissional.  
 
-[![](./assets/images/homepage2.png)](https://marcoscarvalho-tk.github.io/marcoscarvalho.github.io/)  
+[![](./assets/images/homepage2.png)](https://oaksmark.github.io/marcoscarvalho.github.io/)  
 
-👉 [Acesse aqui](https://marcoscarvalho-tk.github.io/marcoscarvalho.github.io/)
+👉 [Acesse aqui](https://oaksmark.github.io/marcoscarvalho.github.io/)
