@@ -1,117 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-	<title>OaksMark</title>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/ico" href="assets/images/newoaklogo.ico">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/icons/font-mfizz-2.4.1/font-mfizz.css">
-	
-</head>
+  <head>
+    <title>OaksMark</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="assets/images/newoaklogo.ico" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/icons/font-mfizz-2.4.1/font-mfizz.css"
+    />
+  </head>
   <div class="container-fluid">
-	<body>
-		<div class="row">
-			<nav id="navbar">
-				<a href="index.html" id="logo"><img class="img-fluid" src="assets/images/oaklogo.png" alt="image"></a>
-				<div id="navbar-right">
-					<a href="#home">Home</a>
-					<a href="#about">Sobre</a>
-					<a href="#contact">Contato</a>
-				</div>
-			</nav>			
-		</div>
-		<div class="row fst-header fullheight-fst" id="home">
-			<h1 class="typed">console.log('<span id="typed"></span>')</h1>	
-		</div>
-		
-		<div class="row area py-5" id="about">
-			<div class="py-5 mx-auto text-center">
-				<img class="mx-auto py-5 d-block" src="assets/images/me2.png" alt="image">
-				<h2>Marcos D. Carvalho</h2>
-				<h3>Estudante de Análise e Desenvolvimento de Sistemas, aficionado por tecnologia e afins.</h3>
-			</div>
-			<div class="row w-100 mx-auto justify-content-center">
-				<div class="item m-2 neumorphism">					
-					<h3 class="text-center"><i style="color: #de2226;" class="pl-3 size-72">&#xf13d;</i><br/>HTML5</h3>
-				</div>
-				 <div class="item m-2 neumorphism">
-					<h3 class="text-center"><i style="color: #0c73b8;" class="pl-3 size-72">&#xf118;</i><br/>CSS3</h3>
-				</div>
-				 <div class="item m-2 neumorphism">
-					<h3 class="text-center"><i style="color: #e7a42b;" class="pl-3 size-96">&#xf143;</i><br/>Javascript</h3>					
-				</div>
-			    <div class="item m-2 neumorphism">
-					<h3 class="text-center"><i style="color: #5c4484;" class=" size-72">&#xf10c;</i><br/>Bootstrap</h3>				   
-			    </div> 
-				<div class="item m-2 neumorphism">
-					<h3 class="text-center"><i style="color: #4e5e86;" class="pl-3 size-96">&#xf166;</i><br/>PHP</h3>					
-			    </div>
-			    <div class="item m-2 neumorphism">
-					<h3 class="text-center"><i style="color: #4e4e4e;" class="pl-3 size-96">&#xf154;</i><br/>MySQL</h3>				    
-			    </div> 
-			</div>
-		</div>
-		<div class="row scd-header fullheight-scd pt-5" id="contact">
-			<div class="form form-group py-5 pr-4 m-auto text-center">
-				<form id="contact-form">
-					<h2 class="m-0"><strong>CONTATO</strong><br/><i class="fas fa-envelope fa-2x"></i></h2>
-					<input type="hidden" name="contact_number">
-					<label for="name">Nome</label>		
-					<input id="name"  type="text" name="from_name" class="form-control field m-2" required="">
-					<label for="email">Email</label>
-					<input id="email"  type="email" name="from_email" class="form-control field m-2" required="">
-					<label for="msg">Mensagem</label>
-					<textarea  id="msg" name="message" rows="3" class="form-control field m-2" required="" style="resize: none;"></textarea>
-					<input id="bt" type="submit" value="Enviar" class="gradient-buttons btn btn-dark m-2">
-					<div id="info1"></div>							
-				</form>
-			</div>
-		</div>
-		<div class="row area py-5">
-				<div class="p-3 mx-auto text-center">					
-					<h2><strong>PROJETOS</strong></h2>
-				</div>
-			<div class="row w-100 mx-auto justify-content-center">
-				<div class="item m-2 neumorphism-1 text-center">
-					<img class="mx-auto p-3 d-block" src="assets/images/work.png" alt="image">
-					<h4>ARTISTA</h4>
-					<i class="fa fa"></i>
-					<a href="#" target="blank">
-						<button class="gradient-buttons btn btn-dark m-2">Visitar</button></a> 
-				</div>
-				 <div class="item m-2 neumorphism-1 text-center">
-					<img class="mx-auto p-3 d-block" src="assets/images/siteshop2.png" alt="image">
-					<h4>ECOMMERCE</h4>
-					<i class="fa fa"></i>
-					<a href="#" target="blank">
-						<button class="gradient-buttons btn btn-dark m-2">Visitar</button></a> 
-				</div>
-				 <div class="item m-2 neumorphism-1 text-center">
-					<img class="mx-auto p-3 d-block" src="assets/images/calendar.png" alt="image">
-					<h4>UTILIDADE</h4>
-					<i class="fa fa"></i>
-					<a href="#" target="blank">
-						<button class="gradient-buttons btn btn-dark m-2">Visitar</button></a> 
-				</div>
-			</div>
-		</div>
+    <body>
+      <div class="row">
+        <nav id="navbar">
+          <a href="index.html" id="logo"
+            ><img class="img-fluid" src="assets/images/oaklogo.png" alt="image"
+          /></a>
+          <div id="navbar-right">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact">Contato</a>
+          </div>
+        </nav>
+      </div>
+      <div class="row fst-header fullheight-fst" id="home">
+        <h1 class="typed">console.log('<span id="typed"></span>')</h1>
+      </div>
 
-		<div class="row">
-			<footer class="footer">
-				<span><a href="https://github.com/marcoscarvalho-tk" target="blank"><i class="fab fa-github size-16"></i></a>&nbsp;2019-
-				<script type="text/javascript"> document.write(new Date().getFullYear()) 
-				</script> Desenvolvido por: <a href="">Marcos D. Carvalho </a></span>
-			</footer>
-		</div>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/jquery-3.4.1.min.js"></script>
-		<script src="assets/js/typed.min.js"></script>
-		<script type="text/javascript" src="assets/js/email.min.js"></script>
-		<script src="assets/js/script.js"></script>
-	</body>	  
+      <div class="row area py-5" id="about">
+        <div class="py-5 mx-auto text-center">
+          <img
+            class="mx-auto py-5 d-block"
+            src="assets/images/me2.png"
+            alt="image"
+          />
+          <h2>Marcos D. Carvalho</h2>
+          <h3>
+            Estudante de Análise e Desenvolvimento de Sistemas, aficionado por
+            tecnologia e afins.
+          </h3>
+        </div>
+        <div class="row w-100 mx-auto justify-content-center">
+          <div class="item m-2 neumorphism">
+            <h3 class="text-center">
+              <i style="color: #de2226" class="pl-3 size-72">&#xf13d;</i
+              ><br />HTML5
+            </h3>
+          </div>
+          <div class="item m-2 neumorphism">
+            <h3 class="text-center">
+              <i style="color: #0c73b8" class="pl-3 size-72">&#xf118;</i
+              ><br />CSS3
+            </h3>
+          </div>
+          <div class="item m-2 neumorphism">
+            <h3 class="text-center">
+              <i style="color: #e7a42b" class="pl-3 size-96">&#xf143;</i
+              ><br />Javascript
+            </h3>
+          </div>
+          <div class="item m-2 neumorphism">
+            <h3 class="text-center">
+              <i style="color: #4e5e86" class="pl-3 size-96">&#xf166;</i
+              ><br />PHP
+            </h3>
+          </div>
+          <div class="item m-2 neumorphism">
+            <h3 class="text-center">
+              <i style="color: #5c4484" class="size-72">&#xf10c;</i
+              ><br />Bootstrap
+            </h3>
+          </div>
+          <div class="item m-2 neumorphism">
+            <h3 class="text-center">
+              <i style="color: #00b7ff" class="size-96">&#xf16e;</i
+              ><br />ReactJS
+            </h3>
+          </div>
+          <div class="item m-2 neumorphism">
+            <h3 class="text-center">
+              <i style="color: #4e4e4e" class="pl-3 size-96">&#xf154;</i
+              ><br />MySQL
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row scd-header fullheight-scd pt-5" id="contact">
+        <div class="form form-group py-5 pr-4 m-auto text-center">
+          <form id="contact-form">
+            <h2 class="m-0">
+              <strong>CONTATO</strong><br /><i
+                class="fas fa-envelope fa-2x"
+              ></i>
+            </h2>
+            <input type="hidden" name="contact_number" />
+            <label for="name">Nome</label>
+            <input
+              id="name"
+              type="text"
+              name="from_name"
+              class="form-control field m-2"
+              required=""
+            />
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="from_email"
+              class="form-control field m-2"
+              required=""
+            />
+            <label for="msg">Mensagem</label>
+            <textarea
+              id="msg"
+              name="message"
+              rows="3"
+              class="form-control field m-2"
+              required=""
+              style="resize: none"
+            ></textarea>
+            <input
+              id="bt"
+              type="submit"
+              value="Enviar"
+              class="gradient-buttons btn btn-dark m-2"
+            />
+            <div id="info1"></div>
+          </form>
+        </div>
+      </div>
+      <div class="row area py-5">
+        <div class="p-3 mx-auto text-center">
+          <h2><strong>PROJETOS</strong></h2>
+        </div>
+        <div class="row w-100 mx-auto justify-content-center">
+          <div class="item m-2 neumorphism-1 text-center">
+            <img
+              class="mx-auto p-3 d-block"
+              src="assets/images/work.png"
+              alt="image"
+            />
+            <h4>ARTISTA</h4>
+            <i class="fa fa"></i>
+            <a href="#" target="blank">
+              <button class="gradient-buttons btn btn-dark m-2">
+                Visitar
+              </button></a
+            >
+          </div>
+          <div class="item m-2 neumorphism-1 text-center">
+            <img
+              class="mx-auto p-3 d-block"
+              src="assets/images/siteshop2.png"
+              alt="image"
+            />
+            <h4>ECOMMERCE</h4>
+            <i class="fa fa"></i>
+            <a href="#" target="blank">
+              <button class="gradient-buttons btn btn-dark m-2">
+                Visitar
+              </button></a
+            >
+          </div>
+          <div class="item m-2 neumorphism-1 text-center">
+            <img
+              class="mx-auto p-3 d-block"
+              src="assets/images/calendar.png"
+              alt="image"
+            />
+            <h4>UTILIDADE</h4>
+            <i class="fa fa"></i>
+            <a href="#" target="blank">
+              <button class="gradient-buttons btn btn-dark m-2">
+                Visitar
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <footer class="footer">
+          <span
+            ><a href="https://github.com/marcoscarvalho-tk" target="blank"
+              ><i class="fab fa-github size-16"></i></a
+            >&nbsp;2019-
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script>
+            Desenvolvido por: <a href="">Marcos D. Carvalho </a></span
+          >
+        </footer>
+      </div>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery-3.4.1.min.js"></script>
+      <script src="assets/js/typed.min.js"></script>
+      <script type="text/javascript" src="assets/js/email.min.js"></script>
+      <script src="assets/js/script.js"></script>
+    </body>
   </div>
 </html>
